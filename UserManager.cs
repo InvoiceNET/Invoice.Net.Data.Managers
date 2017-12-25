@@ -29,7 +29,7 @@ namespace InvoiceNet.Data.Managers
             {
                 if (dataReader.GetString(dataReader.GetOrdinal("user_name")).Equals(userName))
                 {
-                    UInt32 uid = dataReader.GetUInt32(dataReader.GetOrdinal("user_id")));
+                    UInt32 uid = dataReader.GetUInt32(dataReader.GetOrdinal("user_id"));
                     user = new GenericUser(uid, userName);
                 }
             }
